@@ -1,8 +1,11 @@
 import argparse
 import tools.find_mxnet
-import mxnet as mx
-import os
 import sys
+sys.path.append('/home/developer/dennis_codebase/mxnet-yolo/mxnet/python/')
+import mxnet as mx
+print mx.__file__
+import os
+
 from train.train_net import train_net
 
 def parse_args():
